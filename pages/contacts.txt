@@ -1,0 +1,20 @@
+<div class="centered">
+    <img class="phone" src="./images/contact.png"> <h3 id="title">Contacts</h3>
+    
+    <hr>
+
+    <div class="break"></div>
+
+    <ul class="contacts">
+        <li>
+            <a href="https://github.com/Dan2380" target="_blank" rel="noreferrer"><i class="icon fab fa-github"></i><h5>Github</h5></a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/dan-wang-bb2b66127/" target="_blank" rel="noreferrer"><i class="icon fab fa-linkedin"></i><h5>LinkedIn</h5></a>
+        </li>
+        <div class="break"></div>
+        <li>
+            <small class="more">or email danielwang2029@gmail.com</small>
+        </li>
+    </ul>
+</div>

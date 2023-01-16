@@ -1,0 +1,12 @@
+<div class="centered">
+    <img class="star" src="./images/star.gif" title="star"><h3 id="title">Projects</h3>
+    <hr>
+
+    <div class="break"></div>
+
+    <ul class="projects">
+    
+    </ul>
+    <div class="break"></div>
+    <small class="more">more projects at <a class="project" href="https://github.com/dan22380" target="_blank" rel="noreferrer">Github</a>!</small>
+</div>
