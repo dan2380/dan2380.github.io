@@ -1,0 +1,162 @@
+:root {
+    --clr-btn-primary: #7bb99a;
+    --clr-btn-secondary: #679c84;
+    --clr-grid: rgb(248, 248, 248);
+    --clr-title: #679c84;
+    --clr-font: rgb(255, 255, 255);
+    --clr-background: #c3dce8;
+
+    --grid-resolution: 0;
+
+    --ff-primary: "Barlow Semi Condensed", sans-serif;
+
+    --fs-h1: 1.75rem;
+    --fs-primary: 1.25rem;
+
+    --fw-heavy: 700;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+    margin-bottom: 1rem;
+    color: var(--clr-title);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    font-family: var(--ff-primary);
+    font-size: var(--fs-primary);
+    background-color: var(--clr-background);
+    line-height: 1.25;
+    margin-bottom: 5vh;
+
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Box sizing rules and remove default margin */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+/* Remove list styles on ul, ol elements with a list role */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    background-color: var(--clr-btn-primary);
+    border: none;
+    padding: 4px;
+    color: var(--clr-font);
+    border-radius: 5px;
+    margin-left: 2rem;
+    cursor: pointer;
+    box-shadow: 0 6px #999;
+}
+
+button:hover {
+    background-color: var(--clr-btn-secondary);
+}
+
+button:active {
+    background-color: var(--clr-btn-secondary);
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+
+input {
+    max-width: 3.5rem;
+}
+
+#main-grid {
+    margin: 2rem auto;
+    width: 30rem;
+    height: 30rem;
+    background-color: var(--clr-grid);
+    border: 0.5px solid black;
+
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(var(--grid-resolution), 1fr);
+    grid-template-rows: repeat(var(--grid-resolution), 1fr);
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.one-line>* {
+    display: inline-block;
+    white-space: pre;
+}
+
+div#main-grid>div {
+    border: 0.5px solid black;
+}
+
+.gradient-wipe {
+    background: linear-gradient(-45deg, #f896e0, #51a2db, #e89a3e, #87b459);
+    background-size: 300%;
+    font-weight: var(--fw-heavy);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 10s ease-in-out infinite;
+    -moz-animation: animated_text 10s ease-in-out infinite;
+    -webkit-animation: animated_text 10s ease-in-out infinite;
+}
+
+@keyframes animated_text {
+    0% {
+        background-position: 0px 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0px 50%;
+    }
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
