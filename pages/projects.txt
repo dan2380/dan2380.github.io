@@ -5,8 +5,18 @@
     <div class="break"></div>
 
     <ul class="projects">
+
+     <li>
+            <details>
+                <summary>CBIR App</summary>
+                    <div>
+                        Content-Based Image Retrieval- sorts based on colors, shapes, textures
+                        <a class="project" href="https://github.com/dan2380/CBIR_App" target="_blank" rel="noreferrer">Link</a>
+                    </div>
+            </details>
+        </li>
     
     </ul>
     <div class="break"></div>
-    <small class="more">more projects at <a class="project" href="https://github.com/dan22380" target="_blank" rel="noreferrer">Github</a>!</small>
+    <small class="more">more projects at <a class="project" href="https://github.com/dan2380" target="_blank" rel="noreferrer">Github</a>!</small>
 </div>
