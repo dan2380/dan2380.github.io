@@ -1,54 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dan Wang's Website</title>
-    <script src="https://kit.fontawesome.com/57693b47de.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio Website of Dan Wang" />
+    <meta name="keyword" content="Dan Wang, dan2380/>
+    <meta name="author" content="Dan Wang" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <title> Dan Wang </title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3K4H6B82Z9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-3K4H6B82Z9');
+    </script>
 </head>
+
 <body>
-    <div id="main-break"></div>
-    <main>
-        <nav>
-            <a class="nav-link home-link" onclick="loadPage('home.txt'), toggleTab('.home-link')"><i class="fas fa-home"></i></a>
-            <a class="nav-link projects-link clicked" onclick="loadPage('projects.txt'), toggleTab('.projects-link')"><i class="fas fa-code"></i></a>
-            <a class="nav-link contacts-link clicked" onclick="loadPage('contacts.txt'), toggleTab('.contacts-link')"><i class="fa-solid fa-address-book"></i></a>
-        </nav>
-        <section>
-            <div class="split">
-                <h3 id="name">Daniel Wang</h3>
-                <h4 id="title"><i>[</i><abbr title="University of Washington, Bothell campus">UWB</abbr> Graduate<i>]</i></h4>
-                <small id="sub">Software Engineer based in Seattle, WA</small>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
+        <div class="container">
+            <a rel="noreferrer" aria-label="home" class="navbar-brand logo text-uppercase" href="/"
+                data-toggle="tooltip" data-placement="bottom" data-html="true"
+                title="<strong><em>Dan Wang's Personal Portfolio</em></strong>">
+                Dan Wang </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                    <li class="nav-item active"><a rel="noreferrer" aria-label="home" href="#home" class="nav-link"
+                            data-toggle="tooltip" data-placement="bottom" data-html="true">Home</a></li>
+                    <li class="nav-item"><a rel="noreferrer" aria-label="home" href="#about" class="nav-link"
+                            data-toggle="tooltip" data-placement="bottom" data-html="true">About</a></li>
+                    <li class="nav-item"> <a rel="noreferrer" aria-label="home" href="#portfolio" class="nav-link"
+                            data-toggle="tooltip" data-placement="bottom" data-html="true">Portfolio</a></li>
+                    <!-- <li class="nav-item"> <a rel="noreferrer" aria-label="home" href="#trainings" class="nav-link"
+                            data-toggle="tooltip" data-placement="bottom" data-html="true">Trainings</a></li> -->
+                    <li class="nav-item"><a rel="noreferrer" aria-label="home" href="#contact" class="nav-link"
+                            data-toggle="tooltip" data-placement="bottom" data-html="true">Contact</a></li>
+                </ul>
             </div>
+        </div>
+    </nav>
 
-            <hr style="width: 100%;">
-
-            <div class="break"></div>
-            <h5>Bachelor's in <abbr title="Computer Science and Software Engineering"><i>CSSE</i></abbr></h5>
-
-
-            <h5 style="display:block;">Interested in...</h5>
-            <ul class="list">
-                <li>
-                    <img class="arrow" src="images/arrow.gif"><h5><i>F</i>ull-Stack Engineering</h5>
-                </li>
-                <li>
-                    <img class="arrow" src="images/arrow.gif"><h5><i>M</i>achine Learning</h5>
-                </li>
-            </ul>
-
-            <div id="wrapper">
-                <a href="files/resume.pdf" download="DanWangResume.pdf" target="_blank"><button class="resume"><i class="icon fas fa-file-download"></i>Résumé</button></a>
+    <section class="bg-home" id="home">
+        <div class="bg-overlay"></div>
+        <div id="particles-js"></div>
+        <div class="home-center">
+            <div class="home-desc-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 mt-5">
+                            <div class="home-title text-center">
+                                <h1 class="display-4"> <span class="element text-white disable-select"
+                                        data-elements="Dan Wang"></span>
+                                </h1>
+                                <p class="text-light mx-auto para-desc disable-select"> I am a graduate of the University of Washington Bothell (Dec 2022).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>&copy; 2023 | <a href="https://github.com/dan2380" target="_blank" rel="noreferrer">Daniel Wang</a><img class="sparkle" src="images/sparkle.gif" title="i made this too"/></footer>
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row justify-content-center txt-bg txt-bg-about">
+                <div class="col-lg-6 pointer">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <div class="mb-5 pb-3"><i class="fas fa-user-graduate h1 text-muted"></i></div>
+                        <div class="h3 font-weight-bold">About me</div>
+                        <p class="text-muted mx-auto mb-0 mt-4 para-desc">Past experience, Technologies, and Background.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 mt-4 pt-2">
+                <div>
+                    <ul class="nav nav-tabs nav-fill" id="myTab">
+                        <li class="nav-item" data-toggle="tooltip" data-placement="bottom" data-html="true"> <a
+                                rel="noreferrer" class="nav-link active" id="story-tab" data-toggle="tab"
+                                href="#story">About</a></li>
+                        <li class="nav-item" data-toggle="tooltip" data-placement="bottom" data-html="true"> <a
+                                rel="noreferrer" class="nav-link" id="skill-tab" data-toggle="tab"
+                                href="#skill">Skill</a></li>
+                        <li class="nav-item" data-toggle="tooltip" data-placement="bottom" data-html="true"> <a
+                                rel="noreferrer" class="nav-link" id="resume-tab" data-toggle="tab"
+                                href="#resume">Work/Education</a></li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="story" role="tabpanel" aria-labelledby="story-tab">
+                            <div class="text-center">
+                                <div class="about-img mt-5 mb-5"><img src="assets/images/profilePic.png"
+                                        alt="Profile Image" class="img-fluid mx-auto d-block rounded-circle"
+                                        height="400" width="400" loading="lazy" /></div>
+                                <div class="h1 font-weight-bold mb-3"> Daniel Wang <br></div>
+                                <div class="h5 font-weight-bold text-muted mb-3"> Full-Stack Engineer, Machine Learning Engineer </small></div>
+                                <p class="text-muted"> An Enthusiast Coder Eager to contribute to team success through
+                                    hard work, dedication, attention to details and excellent organizational skills.
+                                    Currently Exploring the world of software development and AI Machine Learning as a open source 
+                                    learner and as a University of Washington graduate </p>
+                                <p class="text-muted"><strong>IDE & Editors Used</strong> : Visual Studio Code,
+                                    PyCharm</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="skill" role="tabpanel" aria-labelledby="skill-tab">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="skill">
+                                        <div class="mt-5">
+                                            <p class="text-muted text-uppercase mb-2">Python</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" style="width: 90%;">
+                                                    <div class="progress-value text-muted">90%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-5">
+                                            <p class="text-muted text-uppercase mb-2">Java</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" style="width: 85%;">
+                                                    <div class="progress-value text-muted">85%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-5">
+                                            <p class="text-muted text-uppercase mb-2">C++</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" style="width: 85%;">
+                                                    <div class="progress-value text-muted">85%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-5">
+                                            <p class="text-muted text-uppercase mb-2">HTML</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" style="width: 80%;">
+                                                    <div class="progress-value text-muted">80%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-5">
+                                            <p class="text-muted text-uppercase mb-2">CSS</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" style="width: 80%;">
+                                                    <div class="progress-value text-muted">80%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-5">
+                                            <p class="text-muted text-uppercase mb-2">Javascript</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" style="width: 80%;">
+                                                    <div class="progress-value text-muted">80%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="skill">
+                                        <div class="mt-5">
+                                            <p class="text-muted text-uppercase mb-2">AWS</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" style="width: 75%;">
+                                                    <div class="progress-value text-muted">75%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-5">
+                                            <p class="text-muted text-uppercase mb-2">Docker</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" style="width: 80%;">
+                                                    <div class="progress-value text-muted">80%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-5">
+                                            <p class="text-muted text-uppercase mb-2">Git/GitHub</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" style="width: 85%;">
+                                                    <div class="progress-value text-muted">85%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-5">
+                                            <p class="text-muted text-uppercase mb-2">Postgres</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" style="width: 75%;">
+                                                    <div class="progress-value text-muted">75%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-5">
+                                            <p class="text-muted text-uppercase mb-2">SQL</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" style="width: 80%;">
+                                                    <div class="progress-value text-muted">80%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-5">
+                                            <p class="text-muted text-uppercase mb-2">Apache Airflow</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" style="width: 75%;">
+                                                    <div class="progress-value text-muted">75%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="resume" role="tabpanel" aria-labelledby="resume-tab">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div id="education" class="education-section"> <i
+                                            class="fas fa-graduation-cap mt-5 font-size-50"></i>
+                                        <div class="timeline mt-5">
+                                            <div class="timeline-box left ">
+                                                <div class="timeline-container">
+                                                    <h3 class="experience-designation m-0">Mobile Applications Developer Engineer</h3>
+                                                    <h4 class="experience-company-name "> DrFirst</h4>
+                                                    <h5 class="experience-duration m-0"> Jul - Sept 2020</h5>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-box right ">
+                                                <div class="timeline-container">
+                                                    <h3 class="experience-designation m-0 text-left"> Software Engineer Intern</h3>
+                                                    <h4 class="experience-company-name text-left"> DrFirst
+                                                    </h4>
+                                                    <h5 class="experience-duration m-0 text-left"> Sept - Dec 2022</h5>
+                                                    <!-- <p class="experience-description text-left"></p> -->
+                                                </div>
+                                            </div>
+                                            <div class="timeline-box left ">
+                                                <div class="timeline-container">
+                                                    <h3 class="experience-designation m-0"> Bachelor of Science (B.Sc),
+                                                    Computer Science and Software Engineering
+                                                    </h3>
+                                                    <h4 class="experience-company-name">University of Washington
+                                                        </h4>
+                                                    <h5 class="experience-duration m-0"> Completion Date: Dec. 2022</h5>
+                                                    <!-- <p class="experience-description text-right"></p> -->
+                                                </div>
+                                            </div>
+                                            <div id="timeline-divider">
+                                                <div class="timeline-traveller">
+                                                    <div> <i class="fas fa-plane font-size-25"></i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote-section quote-hireme quote-img">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 text-center fadeInUp">
+                    <h2 class="disable-select">“Once a new technology rolls over you, if you're not part of the
+                        steamroller, you're part of the road.”</h2> <br /> <br />
+                    <h2 class="font-italic disable-select">- Stewart Brand</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <section class="section contact-wrapper bg-contact pointer" id="contact">
+        <div id="particles-js2"></div>
+        <div class="container">
+            <div class="row justify-content-center txt-bg txt-bg-contact">
+                <div class="col-lg-6">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <div class="mb-5 pb-3"><i class="fas fa-headset h1"></i></div>
+                        <h3 class="text-white">Contact me</h3>
+                        <p class="text-white-50 mx-auto mb-0 mt-4 para-desc">Let's remove the distance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4 mt-4 pt-2" data-toggle="tooltip" data-placement="bottom" data-html="true"
+                    title="<strong><em>Current Location</em></strong>">
+                    <div class="contact-desc text-center">
+                        <div class="contact-icon mb-3"><i class="fas fa-street-view text-custom h3"></i></div>
+                        <div class="contact-details">
+                            <p class="mb-0">Bellevue, Washington, United States of America</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4 pt-2" data-toggle="tooltip" data-placement="bottom" data-html="true"
+                    title="<strong><em>Contact Number</em></strong>">
+                    <div class="contact-desc text-center">
+                        <div class="contact-icon mb-3"><i class="fas fa-mobile-alt text-custom h3"></i></div>
+                        <div class="contact-details">
+                            <p class="mb-1">+1 240 495 4647</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4 pt-2" data-toggle="tooltip" data-placement="bottom" data-html="true"
+                    title="<strong><em>E-mail Address</em></strong>">
+                    <div class="contact-desc text-center">
+                        <div class="contact-icon mb-3"><i class="far fa-envelope text-custom h3"></i></div>
+                        <div class="contact-details">
+                            <p class="mb-0">danielwang2029@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row justify-content-center">
+                
+            </div> -->
+        </div>
+    </section>
+
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center mt-5 mb-5"> <br />
+                        <ul class="social-icons mb-3 list-inline">
+                            <li class="list-inline-item"> <a rel="noreferrer" aria-label="image"
+                                    href="https://github.com/dan2380/" target="_blank" data-toggle="tooltip"
+                                    data-placement="left" data-html="true" title="<strong><em>GitHub</em></strong>"> <i
+                                        class="fab fa-github dark"></i> </a></li>
+                            <li class="list-inline-item"> <a rel="noreferrer" aria-label="image"
+                                    href="https://www.linkedin.com/in/dan-wang-bb2b66127/" target="_blank"
+                                    data-toggle="tooltip" data-placement="right" data-html="true"
+                                    title="<strong><em>LinkedIn</em></strong>"> <i class="fab fa-linkedin-in dark"></i>
+                                </a></li>
+                        </ul>
+                        <ul class="social-icons mb-3 list-inline">
+                            <li class="list-inline-item"> <a rel="noreferrer" aria-label="image"
+                                    href="https://www.instagram.com/daniel12309834/" target="_blank"
+                                    data-toggle="tooltip" data-placement="left" data-html="true"
+                                    title="<strong><em>Instagram</em></strong>"> <i class="fab fa-instagram dark"></i>
+                                </a></li>
+                            <li class="list-inline-item"> <a rel="noreferrer" aria-label="image"
+                                    href="https://twitter.com/DanielW93730125/" target="_blank" data-toggle="tooltip"
+                                    data-placement="right" data-html="true" title="<strong><em>Twitter</em></strong>">
+                                    <i class="fab fa-twitter dark"></i> </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="copyright-desc text-white mb-0 h6 mt-2"> 
+            Copyright <i class="fas fa-copyright"></i> 2023 <br>
+            by Dan2380 
+        </p>
+    </footer>
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrollspy.min.js"></script>
+    <script src="assets/js/typed.min.js"></script>
+    <script src="assets/js/typed.init.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/vanilla-tilt.min.js"></script>
+    <script src="assets/js/dark-light-theme.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="https://kit.fontawesome.com/234f83bcd8.js" crossorigin="dan2380"></script>
+    
 </body>
-<script src="index.js"></script>
+
 </html>
