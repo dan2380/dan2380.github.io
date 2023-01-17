@@ -1,5 +1,5 @@
 <div class="centered">
-    <img class="phone" src="./images/phonegif.png"> <h3 id="title">Contacts</h3>
+    <img class="phone" src="./images/contact.png"> <h3 id="title">Contacts</h3>
     
     <hr>
 
