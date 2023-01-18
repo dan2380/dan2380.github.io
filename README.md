@@ -1,4 +1,6 @@
-# dan2380.GitHub.io
+# Dan Wang's Personal Profile Wesbite
+
+**come check it out**
 
 &copy; 2023, Dan Wang
 
