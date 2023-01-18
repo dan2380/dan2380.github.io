@@ -1,6 +1,6 @@
 # Dan Wang's Personal Profile Wesbite
 
-**come check it out**
+**come check it out https://dan2380.github.io/**
 
 &copy; 2023, Dan Wang
 
